@@ -6,7 +6,7 @@ using namespace std;
 //Centurion University Central Library :-)//
 struct student //class student structure
 {
-	int bookID;
+	int bookID;    
 	char title[30];
 	char authorofbook[30];
 	int costofbook;
@@ -57,7 +57,7 @@ int main() //MAIN BODY START
 {
 	int choice;
 	char input;
-	/*string username = "";
+	string username = "";
     string password = "";
     bool loginSuccess = false;
 
@@ -69,20 +69,8 @@ int main() //MAIN BODY START
         cin >> password;
         
         if (username == "200101120051" && password == "cutm123") {
-            cout << "\nLogin Successful\n\n";
-            loginSuccess = true;
-        }
-        else{
-            cout << "Incorrect username or password \n";
-            cout <<"Please try again \n" ;
-        }
-
-    }while(!loginSuccess);
-
-    system("pause"); */
-
-	do
-	{
+			do
+	       {
 		cout << "***---Library Book Record System***--" << endl;
 		cout << "Press 1 issue a book:" << endl;
 		cout << "press 2 return a book:" << endl;
@@ -108,4 +96,14 @@ int main() //MAIN BODY START
 		cin >> input;
 
 	} while (input == 'y' || input == 'Y');
-}
+            cout << "\nLogin Successful\n\n";
+            loginSuccess = true;
+        }
+        else{
+            cout << "Incorrect username or password \n";
+            cout <<"Please try again \n" ;
+        }
+
+    }while(!loginSuccess);
+
+    system("pause"); 
